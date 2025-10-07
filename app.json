@@ -4,7 +4,7 @@
   "repository": "https://github.com/Tennor-modz/tele-session",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
   "keywords": ["telegram", "telethon", "session", "stringsession", "python", "flask"],
-  "stack": "heroku-20",
+  "stack": "heroku-24",
   "env": {
     "FLASK_ENV": {
       "description": "Flask environment",
