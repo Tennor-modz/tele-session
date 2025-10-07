@@ -23,7 +23,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free"
+      "size": "32c-64gb"
     }
   },
   "addons": [],
