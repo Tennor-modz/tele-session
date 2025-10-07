@@ -1,7 +1,7 @@
 {
   "name": "Trash session",
   "description": "A session generator for telegram-bots",
-  "logo": "https://files.catbox.moe/2wj395.jpg",
+  "logo": "https://files.catbox.moe/njhzra.jpg",
   "repository": "https://github.com/Tennor-modz/tele-session",
   "keywords": ["Trashcore-MD BOT", "telegram", "session", "stringsession", "python", "flask"],
   "success_url": "/", 
