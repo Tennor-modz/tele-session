@@ -1,0 +1,27 @@
+{
+  "name": "Trash session",
+  "description": "A session generator for telegram-bots",
+  "logo": "https://files.catbox.moe/2wj395.jpg",
+  "repository": "https://github.com/Tennor-modz/tele-session",
+  "keywords": ["Trashcore-MD BOT", "telegram", "session", "stringsession", "python", "flask"],
+  "success_url": "/", 
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ],
+  "env": {      
+    "PORT": {
+      "description": "Port for web app. 4000,5000,3000... any!",
+      "value": "5000",
+      "required": false 
+    },
+    "MESSAGE": {
+      "description": "This site is only for session generating",
+      "value": "",
+      "required": false 
+    },
+    "SECRET_KEY": {
+      "description": "Secret key for Flask sessions",
+      "generator": "secret"
+    }
+  }   
+}
