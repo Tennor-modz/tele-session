@@ -5,7 +5,7 @@ import asyncio
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))  # Use SECRET_KEY from env
+app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))  # use env SECRET_KEY
 
 @app.route("/")
 def index():
@@ -19,6 +19,7 @@ def send_code():
     phone = data["phone"]
     password = data.get("password")
 
+    # store in session
     session["api_id"] = api_id
     session["api_hash"] = api_hash
     session["phone"] = phone
@@ -29,7 +30,7 @@ def send_code():
             await client.send_code_request(phone)
 
     asyncio.run(_send_code())
-    return jsonify({"status": "ok", "message": "Code sent!"})
+    return jsonify({"status": "ok", "message": "Code sent! Check your Telegram."})
 
 @app.route("/generate_session", methods=["POST"])
 def generate_session():
