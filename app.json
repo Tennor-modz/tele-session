@@ -1,33 +1,12 @@
 {
-  "name": "telegram-session-generator",
-  "description": "Web app to generate Telegram StringSessions using Telethon",
+  "name": "Telegram Session Generator",
+  "description": "Web app to generate Telegram StringSessions using Telethon (Python + Flask)",
   "repository": "https://github.com/Tennor-modz/tele-session",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
   "keywords": ["telegram", "telethon", "session", "stringsession", "python", "flask"],
-  "stack": "heroku-24",
-  "env": {
-    "FLASK_ENV": {
-      "description": "Flask environment",
-      "value": "production"
-    },
-    "SECRET_KEY": {
-      "description": "Secret key for Flask sessions (used for user code verification)",
-      "generator": "secret"
-    }
-  },
   "buildpacks": [
     {
       "url": "heroku/python"
     }
-  ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "32c-64gb"
-    }
-  },
-  "addons": [],
-  "scripts": {
-    "postdeploy": "echo 'App deployed successfully!'"
-  }
+  ]
 }
